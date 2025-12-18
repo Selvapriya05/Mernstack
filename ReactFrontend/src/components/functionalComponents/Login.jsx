@@ -19,7 +19,7 @@ const Login = () => {
       if (res.data.isLoggedIn) {
         localStorage.setItem("isLoggedIn", "true");
         alert(res.data.message);
-        navigate("/");   // ✅ GO HOME
+        navigate("/");   
       } else {
         alert(res.data.message);
       }
@@ -31,7 +31,6 @@ const Login = () => {
   return (
     <div>
       <h2>Login</h2>
-
       <form onSubmit={handleLogin}>
         <input
           type="email"
@@ -60,3 +59,5 @@ const Login = () => {
 };
 
 export default Login;
+
+

@@ -11,7 +11,7 @@ app.use(express.json());
 
 /* ===== MongoDB Connection ===== */
 mongoose
-  .connect("mongodb://localhost:27017/Mern")
+  .connect("mongodb+srv://cys:cys@cluster0.kluay1q.mongodb.net/CYS")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
