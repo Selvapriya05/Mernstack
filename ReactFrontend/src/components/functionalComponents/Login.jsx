@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://classroom-project-selvapriya05-1.onrender.com", {
+      const res = await axios.post("https://mernstack-intern.onrender.com", {
         email,
         password,
       });
